@@ -4,11 +4,11 @@ var myapp= new Vue({
         counter:0
     },
     methods:{
-        increment: function(){
-            this.counter++
+        increment: function(inc){
+            this.counter += inc
         },
-        decrement: function(){
-            this.counter--
+        decrement: function(desc){
+            this.counter -= this.counter !== 0 ? desc:0
         }
     }
     
