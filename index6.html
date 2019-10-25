@@ -10,10 +10,16 @@
 </head>
 <body>
     <div id="my-app6">
-        <div class="" ></div>
+        <div @mousemove="movefunction" class="fixed-box" >
+            <span>{{x}} , {{y}}</span>
+        </div>
+        <br>
+        <button type="button" name="button" @mouseover="overfunction" @mouseout="outfunction" >Mouse Over & Out</button>
+        <!-- <br><br>
+        <button type="button" name="button" @mouseout="outfunction" >Mouse Out</button> -->
     </div>
 
-    <script src="app6.js" ></script>
+    <script src="app6.js"></script>
     
 </body>
 </html>
