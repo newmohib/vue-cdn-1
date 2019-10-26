@@ -23,11 +23,11 @@
     <div id="my-app8">
         <div class="m-5">
             <h3>Counter : {{counter}}</h3>
-            <!--once modifire is used for only one time exicute this event-->
+            <!--once modifier is used for only one time exicute this event-->
             <button @click.once="incrementby1" type="button" class="btn btn-primary btn-lg">Click and Increment</button>
             <br>
             <br>
-            <!-- prevent modifire is used for normal work stop -->
+            <!-- prevent modifier is used for normal work stop -->
             <a href="https://google.com" @click.prevent>Google</a>
             <br>
             <br>
@@ -36,13 +36,13 @@
             </form>
             <br>
             <br>
-            <!-- stop modifire is user for patents do not exicute only self exicute  -->
+            <!-- stop modifier is user for patents do not exicute only self exicute  -->
             <div id="parent-div" @click="submitClick('patent')">
                 <button id="child-div" @click.stop="submitClick('chield')" class="btn btn-primary btn-lg">click me</button>
             </div>
             <br>
             <br>
-            <!-- capture modifire is used for at first exicute parent then exicute chield but normally first exicute chield then prent -->
+            <!-- capture modifier is used for at first exicute parent then exicute chield but normally first exicute chield then prent -->
             <div id="parent-class" @click.capture="parentClass">
                 <button type="button" id="child-class" @click="btnClick" class="btn btn-primary btn-lg">click me again</button>
             </div>
